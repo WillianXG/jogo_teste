@@ -34,6 +34,7 @@
   },
   "name":"jogo_teste",
   "resources":[
+    {"id":{"name":"chao","path":"objects/chao/chao.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "resourceType":"GMProject",
