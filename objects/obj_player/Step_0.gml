@@ -44,12 +44,15 @@ if !place_meeting(x+sign(velh),y,obj_chao)
 		image_speed = 0.4
 		image_xscale = -1
 	}
+	else if(place_meeting(x-10,y,obj_chao))
+	{
+	sprite_index = spr_player_idle
+	}
 	
 	
 }
 else
 {
-	velh = 0
 	sprite_index = spr_player_idle
 	break
 }
@@ -74,10 +77,13 @@ var ground = place_meeting(x,y+1,obj_chao)
 if (ground)
 {
 	coyote_time= coyote_time_max
+	
 }
 else
 {
 	coyote_time--
+	sprite_index = spr_player_jump
+	image_speed = 1
 }
 
 if (_jump and coyote_time> 0)
@@ -85,4 +91,7 @@ if (_jump and coyote_time> 0)
 	coyote_time= 0
 	velv= 0
 	velv-= jump
+	sprite_index = spr_player_jump
+	image_speed = 1
+	
 }
