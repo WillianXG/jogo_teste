@@ -23,6 +23,7 @@ if place_meeting(x+velh,y,obj_chao)
 	velh= 0
 }
 
+
 repeat(abs(velh))
 {
 
