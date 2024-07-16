@@ -65,11 +65,19 @@ function player_state_free() {
     }
 }
 
-// Função de ataque do jogador
+ // Função de ataque do jogador
 function player_state_atk() {
+	
+	if(image_index > 0){
+		if(!instance_exists(obj_hitbox))
+		{
+			instance_create_layer(x + (35 * image_xscale),y,layer,obj_hitbox)
+		}
+	}
     sprite_index = spr_player_atk; 
     if(image_index >= image_number -1)
 	{
+		if(instance_exists(obj_hitbox)) instance_destroy(obj_hitbox)
 		state = player_state_free;
 	}
 }
