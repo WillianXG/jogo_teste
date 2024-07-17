@@ -38,11 +38,6 @@ function state_player_free(){
 		}
 	}
 	
-	if velh > 0{
-	
-	}
-	
-	
 	//Movimento Horizontal
 	if _esquerda
 	{
