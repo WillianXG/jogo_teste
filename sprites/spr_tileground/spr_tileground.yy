@@ -19,6 +19,7 @@
   "height":224,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"29cb075d-eeea-4165-a532-12828c48b970","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"29cb075d-eeea-4165-a532-12828c48b970","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"7e81acaf-6723-415f-9560-d42b4c33781c","blendMode":0,"displayName":"default","isLocked":false,"name":"7e81acaf-6723-415f-9560-d42b4c33781c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_tileground",

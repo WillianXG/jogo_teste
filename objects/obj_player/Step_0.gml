@@ -1,15 +1,41 @@
-// Evento de Passo (Step Event) do objeto jogador (obj_player)
+	//Movimentação
+	var _direita = keyboard_check(ord("D"));
+    var _esquerda = keyboard_check(ord("A"));
+    var _jump = keyboard_check_pressed(ord("W"));
 
-// Gerenciando os estados do jogador
-if (state == player_state_free) {
-    player_state_free();
-}
+    velh = (_direita - _esquerda) * spd;
 
-if (mouse_check_button_pressed(mb_left)) {
-	if (mouse_x < x) image_xscale = -1; else image_xscale = 1
-    state = player_state_atk;
-}
+	//Tilemap colisão
+	var _tile = layer_tilemap_get_id("terreno");
+	
+	//Colisão com o chão
+	var _chao = place_meeting(x, y + 1, _tile);
+	
+	//Pulo e Gravidade
+	if (!_chao)
+	{
+		//efeito da gravidade
+		velv += grav;
+	}	
+	else
+	{
+		//efito pulo
+		velv = 0;
+		
+		//Pulo
+		if (_jump)
+		{
+			velv = -velv_max;
+		}
+	}
+	
+	//Movimento Horizontal
+	move_and_collide(velh, 0, _tile);
+	
+	//Movimento Vertical
+	move_and_collide(0, velv, _tile, 12);
+	
 
-if (state == player_state_atk) {
-    player_state_atk();
-}
+    
+
+
