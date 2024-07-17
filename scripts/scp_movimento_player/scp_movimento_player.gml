@@ -43,10 +43,12 @@ function state_player_free(){
 	{
 		sprite_index = spr_player_run
 		move_and_collide(velh, 0, _tile);
-		image_xscale =-1
+		image_speed= 0.5
+		image_xscale = -1
 	}else if _direita{
 		sprite_index = spr_player_run
 		move_and_collide(velh, 0, _tile);
+		image_speed= 0.5
 		image_xscale = 1
 	}else
 	{
@@ -55,10 +57,15 @@ function state_player_free(){
 	
 	
 	//Movimento Vertical
+	move_and_collide(0, velv, _tile, 12)
 	
-	move_and_collide(0, velv, _tile, 12);
-	
-
+	//Botao de attack
+	if mouse_check_button_pressed(mb_left)
+{
+    if(mouse_x < x) image_xscale = -1; else image_xscale = 1
+    image_index = 0;
+    state = state_player_atk
+}
     
 
 
