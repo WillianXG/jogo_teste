@@ -12,4 +12,4 @@ life = 100;
 coyote_time_max = 10;
 coyote_time = 0;
 
-state = player_state_free;
+state =  state_player_free
