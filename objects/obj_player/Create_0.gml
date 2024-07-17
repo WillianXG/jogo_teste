@@ -3,9 +3,9 @@ spd = 5;
 velh = 0;
 velv = 0;
 
-grav= 0.2;
+grav= 0.5;
 velv_min = 5;
-velv_max = 6;
+velv_max = 15;
 
 life = 100;
 
