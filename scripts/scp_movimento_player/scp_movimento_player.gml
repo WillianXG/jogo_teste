@@ -6,8 +6,6 @@ function state_player_free(){
 	var _direita = keyboard_check(ord("D"));
     var _esquerda = keyboard_check(ord("A"));
     var _jump = keyboard_check_pressed(ord("W"));
-	
-	
 
     velh = (_direita - _esquerda) * spd;
 	
@@ -43,21 +41,18 @@ function state_player_free(){
 	{
 		sprite_index = spr_player_run
 		move_and_collide(velh, 0, _tile);
-		image_speed= 0.5
 		image_xscale = -1
-	}else if _direita{
+	}
+	else
+	if _direita{
 		sprite_index = spr_player_run
 		move_and_collide(velh, 0, _tile);
-		image_speed= 0.5
 		image_xscale = 1
-	}else
-	{
-		sprite_index = spr_player_idle
 	}
 	
 	
 	//Movimento Vertical
-	move_and_collide(0, velv, _tile, 12)
+	move_and_collide(0, velv, _tile, 20)
 	
 	//Botao de attack
 	if mouse_check_button_pressed(mb_left)

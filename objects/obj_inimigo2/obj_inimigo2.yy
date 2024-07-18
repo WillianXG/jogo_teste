@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_inimigo_idle_2",
-    "path":"sprites/spr_inimigo_idle_2/spr_inimigo_idle_2.yy",
+    "name":"spr_golen_idle",
+    "path":"sprites/spr_golen_idle/spr_golen_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

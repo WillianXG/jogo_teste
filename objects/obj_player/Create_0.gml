@@ -1,13 +1,9 @@
-// Inicializando variáveis
-spd = 5;
-velh = 0;
-velv = 0;
+event_inherited();
 
-grav= 0.2;
-velv_min = 5;
-velv_max = 6;
+vida_max= 100;
+vida = vida_max;
+controla_vida = new scp_vida(vida_max);
 
-life = 100;
 
 coyote_time_max = 10;
 coyote_time = 0;
