@@ -11,7 +11,13 @@ function state_player_free(){
 	
 
 	//Tilemap colisão
-	var _tile = layer_tilemap_get_id("terreno");
+	var _tile = [layer_tilemap_get_id("terreno")];
+	
+	//Passar por baixo
+	if (velv >=0)
+	{
+		array_push(_tile, layer_tilemap_get_id("plataformas"));
+	}
 	
 	//Colisão com o chão
 	var _chao = place_meeting(x, y + 1, _tile);
