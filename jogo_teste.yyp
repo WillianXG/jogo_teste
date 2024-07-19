@@ -56,6 +56,7 @@
     {"id":{"name":"spr_hitbox","path":"sprites/spr_hitbox/spr_hitbox.yy",},},
     {"id":{"name":"spr_inimigo_atk","path":"sprites/spr_inimigo_atk/spr_inimigo_atk.yy",},},
     {"id":{"name":"spr_inimigo_idle","path":"sprites/spr_inimigo_idle/spr_inimigo_idle.yy",},},
+    {"id":{"name":"spr_nada","path":"sprites/spr_nada/spr_nada.yy",},},
     {"id":{"name":"spr_parede","path":"sprites/spr_parede/spr_parede.yy",},},
     {"id":{"name":"spr_player_atk","path":"sprites/spr_player_atk/spr_player_atk.yy",},},
     {"id":{"name":"spr_player_hitdamage","path":"sprites/spr_player_hitdamage/spr_player_hitdamage.yy",},},
